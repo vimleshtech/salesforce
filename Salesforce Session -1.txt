@@ -1,0 +1,118 @@
+mtekchandani@yahoo.com
+Introduction of CRM
+Why CRM?
+Cloud Computing - Overview
+What is Software-as-a-Service (SaaS)?
+What is Platform-as-a-Service (PaaS)?
+What is Infrastructure-as-a-Service (IaaS)?
+What is Salesforce.com?
+
+Salesforce.com CRM Editions
+Salesforce.com Navigation - Overview
+
+
+Introduction of CRM
+======================
+is customer relationship manager over the cloud
+
+Cloud Computing - Overview
+-------------------------
+Cloud:
+	->on demand availablilty of resouces
+	->no need of procurment
+	->less cost 
+	->no IT infra management is required 
+
+Why CRM?
+===============
+	-> on demand customization of applications 
+	-> less cost
+	-> highly scable 
+
+
+What is Software-as-a-Service (SaaS)?
+	: salesforce
+What is Platform-as-a-Service (PaaS)?
+	:salesforce force.com
+	:m/s dynmix
+	:sap
+	:.net
+What is Infrastructure-as-a-Service (IaaS)?
+	:VMware (virtual machine) and operating system
+	:AWS
+	:Azure
+	:GoogleCloud
+	etc.
+
+What is Salesforce.com?
+=================	
+Salesforce.com is plateform 
+
+Salesforce.com CRM Editions
+==============================
+-Admin
+-Developer
+-Cloud Sales
+-Integration 
+etc.
+
+Salesforce.com Navigation - Overview
+======================================
+Apps -> Objects -> Tabs/web Page (Home, Accounts, Contacts, Contracts,chatter) etc.
+
+
+
+Standard Salesforce Objects/Tabs
+===================================
+Campaigns	: 
+		Campaigns name: 	festive -2018		
+		From Date:
+		End Date:
+		Target Amount:
+		Actual Amount:
+		
+Leads		: is enquiry 
+
+Accounts	: is client 
+		 HCL LTD.
+		 TCS.	
+Contacts	: 
+		 one account can have multiple contacts 
+			
+Opportunities:
+		10%
+		40%
+		50%
+		60%
+		90%
+		
+Forecast        :  is trend based on previous/histrical data 
+		
+Contracts	: agreement between Accounts/Client and service provider 
+			
+Cases		:
+		
+Solutions:
+		
+Products:
+		
+Chatter: 	communication 
+
+
+Sales Order
+Report
+Dashboard
+
+
+
+
+Home:
+	-Post comments/message
+	-File share
+	-New Event/plan event
+	-leades
+	-oppro.
+	etc.
+
+	
+
