@@ -1,0 +1,84 @@
+Today's Topic
+====================================
+-> Salesforce Environment
+-> Salesforce Applications
+-> App
+-> Objects
+-> Data Type 
+-> Constraints
+-> Validation Rule
+-> Layout
+-> Tabs
+
+
+-> Salesforce Environment
+==============================
+:Salesforce is cloud based paas,and sass product/software
+:cloud based : IT infra over the network 
+:paas : plateform as services 
+          (apex, visualfore page etc.)
+	:salesfoce developer
+	:m/s dynamix 
+	:oracle apps 
+	etc.
+:saas   : Salesforce admin
+	: sas
+	: SAP ERP     
+	
+
+
+-> Salesforce Applications
+============================
+1. Salesforce admin.
+2. Salesforce dev.
+3. Sales Cloud
+4. Sales Integration
+5. Salesforce mobile application 
+etc.
+
+-> App:
+=================
+-> is collections of objects, web pages, rules , workflow , and complete process flow to manage the business (account, contact, contracts, leads, oop...product, sales, report..)
+		->create new application
+		
+
+
+-> Objects	: category,
+			 product :
+				(cat name, product name, pur price,
+				sal price )
+			 , customer : cname  , country, email, phoneno
+
+			 ,sales  : customer, product , quantity, date 
+			
+		->is collection of fields/columns
+
+		category:
+			->Category name    : free text/text field 
+			->Category Type    : Food, Electronic , Cloth	
+						picklist / dropdown
+			->IS Active/Status : 	checkbox 
+						yes / no 
+		
+			
+		
+-> Data Type 
+		:Category name : Text
+		:Type		: picklist
+		:Status		: checkbox
+	
+
+
+-> Tab/web page 
+		: custom view 
+-> Constraints:
+		-Required
+		-Lenght 
+-> Validation Rule: custom rules 
+
+
+
+-> Layout
+==========================
+
+
