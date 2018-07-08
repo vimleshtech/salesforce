@@ -1,0 +1,65 @@
+App 
+Object
+Field type/data type
+Layout
+Validation rule
+
+Today's Topic
+====================
+
+1. Record Type   : depends on Layout
+
+2. Lookup Field 
+3. Master Lookup 
+
+4. Rollup Summary:
+		Aggregiate functions:
+			->count()
+			->Sum()
+			->Max()
+			->Min()
+			
+5. Forumla 
+
+1. Record Type   : depends on Layout
+========================================
+-Different layout / view based their profile 
+-Multiple record type can be assigned to one profile 
+-Seperate Record/one record type can be assigned per profile 
+
+Lookup
+=====================
+2. Lookup Field 		
+		: lookup can be optional 
+		: parent object will have seperate security 
+3. Master Lookup 
+		: lookup will be mandatory
+		: parent security will be applicated on child 
+		: Rollup summary 
+
+
+ClassRoom:		create rollup summary 
+		-> room1
+		-> room2
+		-> room3
+Students:  master lookup from classroom
+		-> studnet 1  room1   
+		-> studnet 2  room1   
+		-> studnet 3  room3
+
+   
+
+
+		
+
+
+
+Lookup Field  vs picklist
+===================================
+Master data
+----------------
+Meta data
+Transaction data 
+
+
+
