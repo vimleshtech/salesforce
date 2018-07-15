@@ -1,0 +1,55 @@
+Today's Topic
+=======================================
+Communcation template: email template
+Workflow 
+Trigger 
+
+Import & Export 
+
+***
+Roles 
+Profile 
+Sharing 
+
+Communcation template: email template
+=============================================
+Go to Setup:
+		-> Communications from left menu panel 
+
+		 {!Case.CaseNumber}:  {!content} 
+
+		<?php
+
+		?>
+
+
+		<% java%>
+		
+
+Workflow 	:
+		1. Rule 
+		
+	
+		Rules Type:
+			1. create
+			2. create and update/edit
+			3. create and udpate/edit with condition 
+	
+
+***:
+	
+==================
+classroom       fname hcount    rollup		rollup 
+		c1  100		2		98	
+		c2   50		3		47
+		c3   30	
+students 
+		c1 		sname  classroom
+				s1   	c1
+				s2   	c1
+
+		c2 
+			s1
+			s2
+			s3
+	
