@@ -1,0 +1,26 @@
+Email Template  
+Email Trigger	
+Formula
+===============================
+
+
+
+Mass Delete /Truncate
+======================
+	-> go to setup
+	-> go to build
+	-> go to interface
+	-> then select "Enable Custome Object Truncate"
+	->click on save
+
+Mode of application/Objects
+================
+
+
+Time Limit to access the application
+==================
+
+Security IP Range 
+==================
+
+	
