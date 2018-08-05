@@ -1,0 +1,140 @@
+Dev
+===========
+VisualForce Page	: web page like html, asp, jsp 
+			: we can develop and customize the web pages 
+
+Apex			: is programing language 
+
+
+
+Editor
+==============
+Developer COnsole :
+		
+File -> New -> visualPage 
+	
+Tags:
+-------
+	<apex>			: START 
+
+	</apex>			: END 
+	<apex:page >
+	<h1>			: header
+	<h2> .... <h6>  
+	<p>			: paragraph 
+	<apex:pageBlock>
+	<apex:pageBlockSection>
+
+
+Expresion :
+		{! }		
+		{! 2*1000}
+		{! 2^10}
+
+
+{! $User.FirstName}
+			: here $User    - system variable 
+
+
+
+MVC : is framework 
+======================
+M : model			: object 
+V : view			: page / hhtml 
+C : Controller 			:  class and functions 
+
+
+Data Submit
+--------------------
+	standardController="Account"
+	<apex:inputField value="{! Account.Name}"/>
+
+
+	 <apex:commandButton action="{! save }" value="Save"/>
+
+
+List  : view 
+==================== 
+variable :
+		int a;  declare variable 
+		String b;
+
+		a =10; assign data    : single vaue 
+		a =20 ; 
+
+
+
+		List<int> a;  : multiple values: COLLECTION OF DATA OR VALUES 
+		a.add(111)
+		a.add(333)
+		
+		List<Account> accounts = new List<Account>();
+
+		function:
+			void getdata()
+			{
+
+					accounts = select id,name from Account;
+			}
+		
+		
+		
+
+
+visualPage:
+		...
+		..
+
+
+ApexClass:
+
+view:
+=====
+<apex:page standardController="Account" recordSetVar="datas"  >
+    
+    <apex:pageBlock title="List">
+        
+    	<apex:pageBlockTable value="{! datas}" var="a">
+            
+        	<apex:column value="{! a.Name }"/>
+        	<apex:column value="{! a.Phone }"/>
+            <apex:column value="{! a.Phone }"/>
+            <apex:column value="{! a.Phone }"/>
+            
+            
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+
+</apex:page>
+
+
+
+====add /save
+====
+<apex:page standardController="Account" showHeader="false"  >
+    
+    <apex:pageBlock title="Cutom Account Page ">
+    			<p>
+                	You can add new account details from here    
+        		</p>
+    </apex:pageBlock>
+    <apex:form >
+        
+        <apex:pageBlock >
+        <apex:pageBlockSection >
+    		Account  Name : <apex:inputField value="{! Account.Name}"/>        
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection >
+        Account Phone : <apex:inputField value="{! Account.Phone}"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection >
+        
+        		<apex:commandButton action="{! save }" value="Add Account"/>
+        </apex:pageBlockSection>
+            </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>
+
+							
