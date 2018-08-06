@@ -1,0 +1,120 @@
+SDLC	: software development life cycle 
+=====================
+There are following phases of SDLC:
+
+1. Requirement Gathering and Analysis		**
+
+	-SRS  :software requirement specification 
+	-FR   : functional requirement (FRS , FRD )
+	-BR   : business requirement 
+	
+2. Design 					**
+
+	-HLD	: high level design 
+	-LLD	: low level design 
+
+3. Development  & Customization			**
+	salesforce 
+
+4. Testing
+5. Release & Mainta....				**
+
+
+Cloud Service Type
+==========================
+Public cloud	:**
+			AWS
+			Azure
+			Salesforce
+			Gdrive/Gmail
+Private Cloud
+		: on premises/ within organization
+	
+	
+Hybrid Cloud 	:**
+		mix of public and private 
+
+		
+Cloud Plateform
+======================
+IaaS		: infra as a service
+		: Operating system
+		: Data base
+		: web server
+		: virtual machine 
+PaaS		: plateform as a service		** salesforce
+		: develop the appication 
+		: customization of application
+	
+SaaS		: software as a service			**salesforce
+		: read to use 
+		: 					-ms word
+							-ms excel 
+							-sap erp
+							-ms dynamics
+
+
+Salesforce Edition 
+====================
+- Salesforce Sales Cloud 
+- Salesforce Admin 
+- Salesforce Developer : coding 
+- Salesforce Marketing 
+- Salesforce Integration 
+
+Saleseforce Plateform
+=======================
+-Force.com
+-Visualforce Page : webpage 			**		
+-Apex 		: is programing language 	**	
+-Sku**		: sdk tool 
+
+
+
+
+https://ap5.salesforce.com/setup/forcecomHomepage.apexp?setupid=ForceCom
+
+
+
+Path : 
+	Click on Setup  -> Click on create 
+			-> then click on App
+	
+
+	
+
+Create new application(app)/project
+============================
+
+
+Common standard objects/web pages:
+	-Home page
+	-Contact 
+	-Chatter 
+	-Reports 
+		
+
+		
+
+Create Objcts:
+=============
+Click on Setup  -> Click on create 	
+			-> then click on Objects 
+
+Create tab/web page
+==================
+Click on Setup  -> Click on create 	
+			-> then click on Tabs 
+
+
+
+Design Custom Visual page
+======================
+Go to developer console 
+
+
+
+
+
+
+
