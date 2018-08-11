@@ -1,0 +1,182 @@
+Todays' Topics
+==================
+Class
+Methods : is functions , multiple function/method can be implemented in one class
+Controller: can become a controller/ after action
+Action/Events
+Compute/ Calculation 
+Component
+
+Class: is wrapper of data member/variable and function
+=============
+Example:
+	AMS :
+		-Employee		: is class  /is seperate file 
+					class Employee
+					{
+						//data member or variable 
+						//global 
+						private int eid;
+						public String fname;
+						protected String lname,addres;
+						String fullname;
+
+
+						//action/method/function
+						void getFullName()
+						{
+							fname = 'nitin';
+							lname = 'sharma';
+							fullname = fname+lname;
+			
+						}	
+						void generatePwd()
+						{
+						//local 
+						String pwd = lname+'111'+addres;
+
+						}
+						
+
+					}
+
+		-Status			: is class
+					class Status
+					{
+
+
+					}
+		-Attendence 		: is class
+
+					class attendance extends employee
+					{
+
+					}
+		etc.
+
+
+Access Specifier
+=============================
+Keywords
+==========
+private 			: can access within same class
+protected			: can be access in same class and child class 
+				: if extends or implements 
+public				: can be access from anywhere 
+
+with sharing 		: salesforce , but doesn's support in java 
+
+
+
+Getter/Setter
+================
+set : assign value 
+		fname ='abcd'
+get: return value / show value 
+
+
+
+public with Sharing class coputeExample {
+    
+    public String empname{get;set;}
+    public String empid{get;set;}
+    public Integer empbsal{get;set;}
+    public Double totalsal{get;set;}
+    
+    public void compute()
+    {
+        totalsal = (empbsal+(empbsal*.40)+(empbsal*.10))*12;
+            
+    }
+    
+    
+
+}
+
+
+==
+<apex:page controller="coputeExample" >
+    
+    <apex:form>
+    	<apex:pageBlock>
+            
+        	<apex:pageBlockSection>
+            	Employee ID : <apex:inputText value="{!empid}"/>                
+            </apex:pageBlockSection>
+            <apex:pageBlockSection>
+            	Employee Name : <apex:inputText value="{!empname}"/>                
+            </apex:pageBlockSection>
+            <apex:pageBlockSection>
+            	Employee Basic Salary : <apex:inputText value="{!empbsal}"/>
+				<apex:commandButton value="Compute" action="{!compute}"/>                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection>
+            	<h1>
+                    
+                    	Total salary : {! totalsal}
+                    
+                </h1>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>
+
+Extension:
+==========
+vfp : visualforce page
+apxc : apex class 
+vfc: visualforce coponent 
+	<apex:component >
+			<apex:attribute>
+
+	</apex:component >
+
+
+ <c:myComponent textValue="This Text is blue" textColor="blue" />
+
+
+
+=============
+<apex:component >
+    
+    <div>
+        
+        First name : <input type='text' />
+        Last name : <input type='text' />
+    </div>
+</apex:component>
+
+
+
+<apex:component >
+    <apex:attribute name="textValue" description="This is the value for the component" 
+                    type="String" required="true"/>
+    
+    <apex:attribute name="textColor" description="This is color for the border." 
+                    type="String" required="true"/>
+    
+    <apex:outputText value="{!textValue}" style="color:{!textColor};"/>
+</apex:component>
+
+
+====
+<apex:page tabStyle="Account"> 
+    <apex:pageBlock >
+        <apex:pageBlockSection title="myComponent Test" collapsible="false">
+            
+            <c:myComponent textValue="This Text is blue" textColor="blue" />
+            <c:myComponent textValue="But this is red" textColor="red" />
+            <c:myComponent textValue="Test 1" textColor="yellow" />
+            <c:myComponent textValue="Test 2" textColor="green" />
+            
+        </apex:pageBlockSection>
+        <apex:pageBlockSection>
+            <c:cutomCoponent />
+            
+        </apex:pageBlockSection>
+    </apex:pageBlock>     
+</apex:page>
+
+
