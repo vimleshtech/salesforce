@@ -1,0 +1,27 @@
+trigger testTrigger on t_student__c (after insert) {
+
+    List<Contact> obj = new List<Contact>();
+    
+    string newname;    
+    for(t_student__c a: trigger.New)
+    {        
+     	   newname = a.Name;
+           newname = 'Mr. '+newname;
+           a.Name = newname;
+        
+        
+        	// a.Name ='Mr. '+ a.Name;
+        	update a;
+        
+        	///add to othe robject
+        	Contact c =new Contact();
+        	c.name = a.name ;
+        	c.phone = a.phoneno;
+            obj.add(c);
+        
+               
+    }
+    
+    insert obj;
+    
+}
