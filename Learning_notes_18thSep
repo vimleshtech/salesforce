@@ -1,0 +1,122 @@
+Today's Topics
+=================================
+-> Types of Cloud Services
+	-> Private Cloud
+			- Within a Organization 
+	-> Public Cloud
+			- Any person access from anywhere
+	-> Hybrid Cloud
+			- Combination of above two			
+		
+-> Types of Application/Software Services
+	-> IaaS	: infra as as services
+		-web server
+		-database server
+		-virtual machine
+		-storage
+	
+		Server Provider:
+			-AWS
+			-MS Azure
+			-Google Cloud
+
+	-> PaaS	: plateform as services
+		-.Net
+		-SAP ERP
+		-MS Dynamics
+		-Oracle Apps		
+	-> SaaS	: software as a Services 
+		-MS Office 
+		-SAS
+		-Tally
+		etc.
+
+-> Salesforce Environment 
+	-> Salesforce Admistrator 	: customize the applicait	,manage the security, data 	
+
+					flow, workflow and approval 
+	-> Salesforce Developer	: beyond the customization of application 
+				(whatere work we cannot do using admin , that can be 	
+
+			done in dev)
+				-apex		: programing language
+				-visualforce page 	: web page
+				-class/controller	: coding 
+				-trigger		: function that will work 		
+
+				automatillcay
+				-component	:		
+
+	-> Salesforce Cloud Service	:  
+			-plateform cost and revenue management 
+			-procurement management
+			-web, api , mobile app and other application management	
+	-> Salesfore Sales Services: 
+				-Marketing 
+				-AdWords
+				-Youtube
+				-sulekha
+				-justdial 
+				etc.				
+	-> Salesforce Integration Services 
+				-database integration from private to hybrid
+				 or hybrid/public to private 
+		
+	
+
+
+
+
+Salesforce Edition:
+	-> Lightning
+	-> Classic 
+		https://ap4.salesforce.com/home/home.jsp?source=lex
+
+
+
+Salesforce Application Setup/Customization
+=======================================
+-> Go to Setup  (top right corner)
+-> Go to Create ( bttom left pane)
+
+
+Step1:
+	Create App
+			->School 
+Step 2:  Identify objects as per requriement and create the objects
+			-> ClassRoom			:
+			-> Cource				:
+			-> Candidates			:
+			-> Faculty
+			-> Subject 
+			-> Examination 
+
+		
+	
+Step 3: Identify the columns from every objects and data type 
+			ClassRoom
+				ClassRoom Name   : text
+				# of seats 	: number
+				location 		: text
+
+			Cource 
+				name		: text
+				course category	: picklist 	
+				duration 		: int
+				description 	 : text	
+				
+
+			Candidates 
+				cname		: text
+				father's name	: text
+				dob		: date
+				email		: email
+				gender		: picklist
+				address		: text
+				classroom	: lookup column/relationship  
+			
+
+Step 4: convert/add Object to Tab 
+	
+
+
