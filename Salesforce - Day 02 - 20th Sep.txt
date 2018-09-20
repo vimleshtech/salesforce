@@ -1,0 +1,154 @@
+Today's Topics
+============================
+-Picklist
+-Lookup vs masterloop
+-Rollup Summary   : is aggregiate function in parent object
+			-sum(), count(), max() , min()
+-Formula	: calculation and computation 	
+
+-Data Type
+
+-Constraints 
+
+-Validation Rule 
+
+-Record Type 		: one page/tab multiple view (seperate view for every user)
+
+
+Picklist : is collection values/items which is resuable on webpage/tab
+=============
+-> Country
+-> Gender
+-> Category b
+
+There are following way to create picklist:
+	i. Create/Add new field and choose type picklist and add list of values
+	ii. Global picklist 
+		->Setup -> Create -> Picklist value set 
+	
+
+
+Note : pick list can be single or multiple selection 
+
+
+
+
+Lookup vs master lookup
+===========================
+Lookup : one object is dependent on different object
+ 	- there is no impact on child object if parent object will be removed/deleted
+	- We cannot view all child information from parent object
+	
+MasterLookup : is also kind of lookup 
+		-we can track and manage child object information from parent object
+		-all child rows will be removed if parent is removed 
+	
+ 
+
+Objects:
+	ClassRoom - Demo
+		name    #no of seats    availability   occupied 
+		Room1 	100 		98		2	
+		Room2	30
+		
+	Student - Demo 
+			name			classroom 	dob   standard
+			Student1		Room1
+			Student2		Room1
+			Student3		Room2
+	
+	
+
+
+  Step1 :
+		create parent object
+		and add field
+		   #of of seats 
+
+  Step 2: 
+		 create child object
+		 Then add masterlookup from parent object (classroom-demo)
+		 add other fields
+			-dob
+			-standard
+			..
+ Step 3:
+			
+	Add rollup summary on parent object (rollup is allowed only if parent 		object is reffered as masterlookup in other child object)
+ 
+
+	There are following inbuilt aggregiate functions:
+		-count()
+		-sum()
+		-max()
+		-min()
+
+					
+Data Type
+=====================
+-Auto Number** : system will generate the no. automatically for every column'
+-Formula    ** : any maths, text, date function and expression can be applied here 
+-Rollup Summary **
+-Lookup Relationship**
+-Lookup Maser Relationship **
+-External Lookup 
+-Checkbox 		: checked , unchecked 
+-Picklist  **
+-Picklist (multi select)  **
+-Text vs TextLong , and RichText
+	
+
+Constraints  : is rules and regulation /condition
+===================================================
+-> Required Field
+-> No Duplicate
+-> Data type and Size
+
+Validation Rule  : custom validation 
+================================
+Go to object -> Then create new rule /edit existing rule 
+
+Record Type 
+===================
+Go to Object -> add record type
+
+We must have at least two page layout 
+
+
+
+Next
+================================
+-> Communication / Email Notification 
+-> Workflow Rule
+-> Approval 
+-> Company profile
+	-currency
+	-country
+	-date time format
+-> Users
+	Reset pwd
+
+-> User Group 
+	
+-> Role
+
+-> Profile
+
+-> Import and Export  (data management)
+
+-> Standard Objects
+
+-> Home , Chatter, File Sharing 
+
+-> Accounts , Contact, Contracts , Compaign, Leads , Opportunity 
+
+-> Report
+
+-> Dashboard
+
+
+
+
+
+
+		
