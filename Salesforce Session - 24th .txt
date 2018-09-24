@@ -1,0 +1,59 @@
+Realtaionship between two or more than two objects is called lookup
+-----------------------
+There are following types:
+
+i.  Lookup:
+		-one parent and one child 
+		-we cannot summarize the data on parent level 
+		-there is no impact on child control if we will remove 			parent row 
+		-Lookup can be optioal 
+			
+Marter Lookup	
+		-one parent and one child 
+		-we can summarize the data on parent level 
+			-we can apply the functions
+				-max(), min(), sum(), count()
+		-there is impact on child control if parent row will be 		removed(all child rows will be removed)
+		-MasterLookup field is mandatory 
+		
+Steps to create master lookup:
+	i. create parent object		
+	ii. create child object
+	iii. add master lookup field on child object
+	iv. add rollup summary on parent object
+
+
+Example:
+	Country : object
+	Customer : object
+
+
+	
+Data Mananagement  (data integration)
+	-> Setup -> Data Management Section in left panel (left navigation bar)
+============================
+-> Export 	: download the object data to excel or csv or word file 
+	there are following options for export:
+		i. export now 
+		ii. schedule export
+	We need select the object(system defined, user defined/custome objects)	 	
+		Note : __c  - represent custom object
+	
+
+	Your export has been queued. You will receive an email notification when it is 	completed.
+	
+-> Import  : we can import exce or csv data from local file system to salesforce object
+
+
+
+Communication Template
+-> Setup -> Communication Section in left panel (left navigation bar)
+=============================
+
+
+Workflow and Approval 
+===========================
+-> Setup -> Create 
+
+	
+	
