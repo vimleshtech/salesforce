@@ -1,0 +1,72 @@
+-> Email Template / Communicaation 
+-> Workflow Rule (condition)
+	-> Notify to other users when new row will be created 
+	or edited or deleted 
+	-> Rule can be applied with condition or without condition 
+		Example:
+			condtion 		
+				countr =='india'
+
+
+-> Roles 	: Hirarchey 
+	CEO 
+		VP 
+			Director
+				SalesHead
+					Manager
+						Lead
+-> Users
+
+Objects 
+===================
+Example:
+	Customer
+	Prouduct
+	Sales_Order
+		
+
+
+
+						 	TeamMember 
+Approval Process (approal process, rejection process)
+======================
+
+Workflow Rule 1 (condition)
+Workflow Rule 2 (condition)
+	
+
+
+Select Approver
+===================
+
+Using the options below, specify the user to whom the approval request should be assigned.
+
+-Let the submitter choose the approver manually.
+-Automatically assign an approver using a standard or custom hierarchy field: 
+-Automatically assign to queue. 
+-Automatically assign to queue.  Lookup (New Window)
+-Automatically assign to approver(s).  
+
+
+
+
+====
+ Create additional steps if a record requires more than one level of approval.
+Example:
+Discounts of more than 15% require an additional manager's approval
+ Add Initial Submission workflow actions. These actions will take place when a record is submitted for approval.
+Example:
+A Field Update action that changes the value of the Status field to "Pending"
+ Add Final Approval workflow actions. These actions will take place when a record has received all necessary approvals.
+Examples:
+A Field Update action that changes the value of the Status field to "Approved"
+An Email Alert action that notifies the owner their record has been approved
+ Add Final Rejection workflow actions. These actions will take place when a record has been completely rejected by an approver.
+Examples:
+A Field Update action that changes the value of the Status field to "Rejected"
+An Email Alert action that notifies the owner their record has been rejected
+ Add Recall workflow actions. These actions will take place when a submitted approval request is recalled.
+Examples:
+A Field Update action that changes the value of the Status field from "In Progress" to "Not Submitted"
+
+
