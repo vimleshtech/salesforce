@@ -1,0 +1,97 @@
+String Input Append - Example with Apex
+=======================================
+Page:
+------------------------------------------------------------
+
+<apex:page controller="a_submit_data" >
+    
+    <apex:form>
+    
+        First Name : <apex:inputText value="{!fn}" />
+        Last Name : <apex:inputText value="{!ln}" />
+        
+        <apex:commandButton value="Append"  action="{!submit}" />
+        Full Name is : {!out}
+    </apex:form>
+    
+</apex:page>
+
+Class:
+------------------------------------------------------------
+
+public class a_submit_data {
+
+    public string fn{get;set;}
+    public string ln{get;set;}
+    public string out{get;set;}
+    
+    public void submit()
+    {
+     	out = fn+' '+ln;
+        
+    }
+    
+    
+}
+
+
+List - SOQL (fetch data from custom object on button click)
+=======================================
+
+Page:
+--------------
+<apex:page controller="getListData" >    
+    <apex:form>    
+        <apex:commandButton value="Get Data" action="{!getdata}" />        
+        
+        
+        
+
+	<apex:pageBlock>
+         <apex:pageBlockTable value="{!cr}" var="c">
+             
+          <apex:column headerValue="Name">
+              
+          <apex:outputField value="{!c.Name}"/>
+
+          </apex:column>
+
+           
+
+          <apex:column headerValue="No of Seats">
+          <apex:outputField value="{!c.of_seats__c}"/>
+
+          </apex:column>
+
+           
+
+          <apex:column headerValue="No of Available Seat">
+
+          <apex:outputField value="{!c.of_available_seats__c}"/>
+
+          </apex:column>
+
+          </apex:pageBlockTable>
+        </apex:pageBlock>        
+        
+    </apex:form>
+</apex:page>
+
+Class:
+-------------------------------
+public class getListData {
+
+    public List<ClassRoom_Demo__c> cr{get;set;}
+    
+    public void getdata()
+    {
+         cr = [SELECT Name, of_seats__c, of_available_seats__c FROM ClassRoom_Demo__c];
+        // cr = [SELECT Name, of_seats__c, of_available_seats__c FROM ClassRoom_Demo__c LIMIT 2];
+        // cr = [SELECT Name, of_seats__c, of_available_seats__c FROM ClassRoom_Demo__c WHERE Name ='abcd'];
+        // cr = [SELECT Name, of_seats__c, of_available_seats__c FROM ClassRoom_Demo__c ORDER BY Name DESC];
+        
+    }
+    
+    
+}
+
