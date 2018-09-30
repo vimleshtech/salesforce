@@ -1,0 +1,76 @@
+https://www.w3shools.com
+===========================
+bootstrap : is css(cascading style sheet) inbuilt library 
+
+Concepts:
+	.		: class
+	#		: id 
+
+Css Types:
+	-inline
+		<h1 style="color:red;">   </h1>
+		<div> </div>
+	-infile/internal
+		<sctyle type="text/css" >
+			.txt{
+				color:black;
+				font-size:10px;
+				background-color:blue;
+			}
+		</style>	
+
+
+		<h1 class="txt"> hi </h1>	
+		<div class="txt"> </div>	
+	-external/referencetial 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		.txt{
+				color:black;
+				font-size:10px;
+				background-color:blue;
+			}
+
+		#dv{
+				color:black;
+				font-size:10px;
+
+		}	
+
+
+====================================
+JS : is javascript which is client side scripting language 
+
+<script type="text/javascript">
+
+	function test()
+	{
+
+		alert('hi'); 
+	}
+</script>
+
+
+<input type="button" value="Add"  onclick="test()" />
+
+
+
+
+
+
+
+=====
+<apex:page showHeader="true">
+    <div style="width:50%;">
+        <h1>
+            Images 
+        </h1>
+        <apex:image url="{!$Resource.testimage}"/>
+    </div>
+</apex:page>
+
+
+
+---Develop section -> Static resources 
+
+
