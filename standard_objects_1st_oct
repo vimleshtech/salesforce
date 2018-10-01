@@ -1,0 +1,38 @@
+Standard/system defined objects
+============================================
+Accounts	: client / customer 
+		example:
+			Account: HCL Ltd.
+Contacts	: contat person/point within client organization/cliet side 
+			Contact: 
+				Nitin Sharma  -Noida	: HCL Ltd. 
+				Ritu Agarwa -Gurgaon    : HCL Ltd. 			
+
+Contracts	: aggregent between B-to-B (service provider to consumer)		
+
+	
+Campaigns	: is preplaned events for particullar duration/period  
+		  		
+
+Leads		: is enquiry 
+		
+
+Opportunities 	: matured leads is called opportunities 
+
+Products	: 
+
+Orders 		: 
+
+Forecast  : 
+		compaign, from , to, estimated outcome, actual outcome, fromdate , to 	
+
+		date
+
+Cases		: concert, questions, defect of product from client side 
+
+Solutions	: reponse of cases is called solutions 
+	
+
+
+Chatter  : post the comments, shedule events, and share the files
+		
