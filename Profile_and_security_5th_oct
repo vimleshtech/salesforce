@@ -1,0 +1,27 @@
+Setup -> Manage Profile 
+	-User 			
+	-Mass Email Users
+User Group 
+
+User Profile
+	-Application Level Level Security
+-Tab/Object Level Security
+	*Field Level Security
+-Operation - Permission (read, write, delete etc.)
+-Session timeout 
+-Session Settings , Password policies 
+-Login Hours
+	ShareAccess /Permission Sets
+
+
+
+
+-Every User should have one profile  (20 objects)
+ -u1 ... u10
+
+
+
+OWD : organization by default
+==============		
+Application setup : mobile phone or other device 
+		
