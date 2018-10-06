@@ -1,0 +1,90 @@
+JS Doubts
+===================
+
+New Topics
+======================
+Trigger  : is type of function (set of command/instructions) which invokes(execute/call/run) 
+
+automatically when DML(data manipulation language) will perform on an object
+	Types of Trigger:
+		-Before
+			-insert/add new record
+			-update
+			-delete 	
+		-After
+			-insert/add new record
+			-update
+			-delete 	
+Syntax:
+=====================
+
+Sales_Order_Trigger__c	: object
+	Quantity__c	: column
+	Price__c
+	Service_Tax__c
+	Total_Price__c
+
+
+
+trigger before_sales_order_create on Sales_Order_Trigger__c (before insert) 
+{
+    for(Sales_Order_Trigger__c o : trigger.New)
+    {
+    
+        o.Total_Price__c = o.Price__c*o.Quantity__c;
+        
+        if ((o.Price__c*o.Quantity__c)<1000)
+        {
+            o.Service_Tax__c =  (o.Price__c*o.Quantity__c)*.12;
+        }
+        else
+        {
+            o.Service_Tax__c =  (o.Price__c*o.Quantity__c)*.05;        
+        }
+        
+    }
+
+}
+
+
+
+
+
+==== insert data to other object after some action on parent object
+
+
+trigger before_sales_order_create on Sales_Order_Trigger__c (before insert) 
+{
+    List<sales_rep__c> olist =new List<sales_rep__c>(); //instance of second/other Object(tab)
+
+    for(Sales_Order_Trigger__c o : trigger.New)
+    {
+        sales_rep__c r =new sales_rep__c(); //instance of other object
+    
+        o.Total_Price__c = o.Price__c*o.Quantity__c;
+        
+        if ((o.Price__c*o.Quantity__c)<1000)
+        {
+            o.Service_Tax__c =  (o.Price__c*o.Quantity__c)*.12;
+               r.username ='user1';
+	r.oid =o.oid;
+	r.pname =o.pname
+	
+
+		
+        }
+        else
+        {
+            o.Service_Tax__c =  (o.Price__c*o.Quantity__c)*.05;        
+        }
+
+	olist.add(r);
+        
+    }
+
+	insert olist;
+
+
+}
+
+
