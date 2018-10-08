@@ -1,0 +1,234 @@
+Sales Productivity Management Automation Engine (AppExchange-Listed)
+
+Client:
+CRM, Sales & Marketing Consulting Group, USA 
+Industry:
+CRM 
+Technologies: 
+Salesforce.com, VB.Net, Sage's Act Integration, Microsoft Exchange Server. 
+We were involved in the development of a Salesforce-enabled Sales Productivity Management Automation Engine for our client. The Sales Productivity Management Automation Engine, which is a Salesforce AppExchange-Certified application, automates time-consuming marketing, sales, and CRM follow-up activities in Salesforce.com freeing valuable selling time and giving salespeople a competitive selling advantage. It allows salespeople to quickly assign contacts in Salesforce.com to pre-defined relationship building campaigns for marketing, sales and CRM. In addition to Salesforce.com, the Sales Productivity Management Automation Engine was made compatible with other CRMs and contact management applications.
+
+ 
+
+Back to Top
+
+
+Salesforce.com‐Powered CMS (Content Management System)
+
+Client:
+Information Technology Services Provider, Japan 
+Industry:
+Information Technology 
+Technologies: 
+Salesforce, Force.com, Apex, Visualforce. 
+The client's business was in need of a Content Management System to be built on Salesforce platform with business-specific customizations. We developed, in phases and as per our client's requirements, the Content Management System on Salesforce platform with custom functionalities like form generation, marketing automation, social networking service functions, database marketing functions, and various controllers to cater to the client's evolving business needs.
+
+For example, in the initial phase, we created a CMS on Salesforce platform comprising Page Controller, CSS Controller, JV Controller, Widget Controller, and Template Controller, together with preview function and a 2-step approval workflow. SEO functions (META-word & HTML controller) were added to the CMS for search optimization on pre-selected search words. Parameter control functions were added for additional SEO functions and automatic sitemap generator was also attached. Form Generator, Marketing Automation Functions, Social Networking Service Functions, etc were developed in the subsequent phases.
+
+ 
+
+Back to Top
+
+
+Force.com‐Powered EMS (Enterprise Management System)
+
+Client:
+Information Technology Services Provider, USA 
+Industry:
+Information Technology 
+Technologies: 
+Salesforce, Force.com, Apex, Visualforce. 
+The organization needed a Force.com cloud application which could centralize all of its enterprise management processes, e.g. recruitment, operations, sales, etc. In the Recruitment Module, for example, to track recruitment data, custom objects such as the following were created: Position, Candidate, Job Application, Review, Job Posting, and Employment Website. Security and sharing rules were built into the app to control what specific users can or can't see. Work‐flow and approval processes were put in place to automate relevant business processes such as triggering alerts, submitting for executive approval, etc. Detailed Custom Reports (with filters, conditional highlighting, subtotals, and charts) and Dashboards (with different components on a single page) were created to facilitate recruitment data overview and drill‐down. Visualforce was used to create custom user interfaces as per the client's business needs.
+
+ 
+
+Back to Top
+
+
+Salesforce CRM Customization
+
+Client:
+Information Technology Services Provider, USA 
+Industry:
+Banking and Insurance 
+Technologies: 
+Salesforce, Force.com, Apex, Visualforce. 
+Configuration of Salesforce.com application to incorporate various standard functionality like Leads, Accounts, Contact, Activity, Campaign, Products and Territory Management etc. were done. Creation and customization of various objects, fields, record types, Workflow and Approval Processes, Triggers, Controllers, Escalation rules, Assignment rules, Validation rules, sophisticated Visualforce Pages, Custom fields, Email Services, and Sharing rules were done as per business needs of the client.
+
+ 
+
+Back to Top
+
+
+Salesforce to Salesforce Data Migration
+
+Client:
+Consulting Service 
+Industry:
+Healthcare 
+Technologies: 
+Apex, Visualforce, Apex Data Loader, Salesfroce to Salesforce(S2S) 
+The project was to migrate data from one salesforce instance to another using a tool, such as Apex Data Loader and natively supported feature of the force.com platform namely salesforce to salesforce(S2S). We migrated standard objects such as Account, Contact, Opportunity, Case, Case Comment, Lead, Solutions, Attachments, Task, Event, TaskRelation, EventRelation, Campaign, CampaignMember, OpportunityProduct, Schedule, Document etc. using Apex Data Loader as we wanted to keep system audit fields such as created by, created date, lastmodified by and last modified date same both in source and target orgatization. For this we had to raise a case with salesforce support to enable audit fields before migration.
+
+We executed the following steps to migrate standard objects using Data Loader.
+1. Defined a formula field in the source org in each of the objects we migrated to hold the record id of the obejct. This was to match the records in source as well as in the target org.
+2. Extracted data from the source salesforce org.
+3. Replaced the old master as well as lookup values with new values using VLOOKUP function in Microsoft Excel.
+4. Created  custom  fields in the target org in each of the objects to hold the old record ids i.e. the record id of the source org.
+5. Uploaded the data to the target salesforce org using Data Loader.
+
+We also migrated many custom objects using S2S feature of force.com. For this we executed the following steps:
+1. Enabled salesforce to salesforce in source as well as target org.
+2. Established a connection between source and target org by sending an invitation from source  to target org before data migration.
+2. After the connection was established, in the source org we published the objects we wanted to migrate.
+3. In the target org we subscribed the objects and mapped the fields in target org with those of source org.
+4. Implemeted scripts using apex to set the master as well as lookup values in the obejcts.
+5. Desgined a visualforce page with a dropdown to popuate custom objects and a button next to it to start migration after selecting the object.
+6. In the same visualforce page we also designed buttons to execute the apex script to set the master as well as lookup values in the objects.
+
+During entire process of data migration we disabled all the workflow rules, triggers and validation rules to avoid failure in data migration, due to validation errors.
+
+ 
+
+Back to Top
+
+
+Customization in Salesforce
+
+Industry:
+Non Profit, Health care, Electronics 
+Technologies: 
+Salesforce 
+In Salesforce, standard feature for every Quote, there is an option to get quote PDF. PDF contains some existing and standard fields of Quote. In this project quote template modification has been done. New quote template contains not only fields from quote, as well as fields from quote line items. Some of those fields are existing and some are calculated/modified. In template Terms and Conditions text is also modified as per requirement. 
+
+Sort feature in Salesforce for Opportunity Line items does not give flexibility to sort line items level wise. Also it does not provide option to override the sort feature. In customization projects new Sort feature has been developed. It is a completely a new addition. This feature has level wise sort facility. Say, there are 10 line items. First user can sort based on Quantity of those, then based on Price and so on. Flexibility given is upto 4 levels. Click on new Sort button gives sorting option and save line items. New sorted line items will be shown in a new related list in Opportunity detail page. 
+
+New fields which are mainly calculated field based on lots of data and information at various table are added. Those fields are mainly populated via trigger. All these acts on Opportunity, Contact, Quote, Lead etc. 
+
+Overriding existing related list has been done. Standard related list often does not serve purpose of displaying required field and specifically calculated fields needed for business purpose. Overriding existing list gives chance to display required format and fields of related list. 
+
+Lead convert is an existing feature of Salesforce. It has some floe of actions automatically performed while a Lead is converted to contact or account. Customization of Lead convert via trigger fired just after lead is converted provides additional features needed like Create 2 extra contacts from Parent information of converted Lead etc. 
+
+Building Settings such as Visualforce page for existing application in organization. This provides one stop facility to organization administrator to set up global variables. Creating formula fields, Roll up fields for database. Trigger for Email firing at a specific interval based on requirements. Sync feature of Salesforce in customized, modified and deployed to various accounts.
+
+ 
+
+Back to Top
+
+
+Building internal app in Salesforce
+
+Industry:
+Education 
+Technologies: 
+Salesforce 
+This is for an education system. Entry point is Contact. From contact new form which creates Student type contact. Student holds all relevant information as input fields. Student information creation will also hold information of Class Schedule chosen for that student. There are Registered classes in system. From within those classes, a student can select his/her schedule and time for attending class. Courses are also available to choose from. Attendance of students are also kept in system. After examination grade and population of transcript for each student is there. Apart from start from contact, also quick link to register is there at system at side menu of salesforce UI.
+
+ 
+
+Back to Top
+
+
+Form building in Salesforce
+
+Industry:
+Non Profit 
+Technologies: 
+Salesforce 
+Some organization has existing website hosted from force.com platform. Now new forms has been added to those sites. It is like an input form which creates new entries in Salesforce internal database from site. Say, a church affiliation site. New form creates Child information and legal guardian information with all details. 
+
+New login page addition in site and displaying step by step forms there. Organization has contact in its database. If existing contact username password matches ,that provides facility to log in. Or to register a a new user. Then User can see all the events of organization based on his/her profile visibility and also can fill up Profile data and operate many table from input forms there. 
+
+Often there is online gift sending portals. There new Visualforce page has been hosted with options to select gifts and place order to database. Gifts number can be maximum four and with all details of gifts from size ,quantity to color.
+
+ 
+
+Back to Top
+
+
+QR code in Salesforce
+
+Industry:
+Client organization use, Electronics 
+Technologies: 
+Salesforce 
+User of organization contains formula field which is filled up with link and another field holds QR code with information of User. This populated link navigates to iframe which is actually a business card with all information of user. I-frame can be placed in HTML page to place user information card in page.
+
+ 
+
+Back to Top
+
+
+Customer Portal Reports
+
+Client:
+Modules Services 
+Industry:
+Education 
+Technologies: 
+Salesforce, Apex, Visualforce 
+The project has the requirement is to create custom reports (not the standard Salesforce reports) with all kinds of filter options for the customer portal users to input based on different fields. The reports will contain custom grouping (summary/sub-summary), sorting, limiting etc.
+
+The requirement was to use custom Visualforce pages and apex controllers for the reports to generate the reports with all the user input and system configuration validations.
+
+Filters: System administrator to enter the validations in the report configuration page (different from the Report Page) according to which data will be displayed at the start up when a customer portal user clicks on the report link. User also has the option to override the configuration done by the system administrator.
+
+Grouping: The report data needed to be grouped accordingly as per requirement. We have created custom grouping/subgrouping for the report data and displayed in the Visualforce page.
+
+Sorting: The report data was sorted in ascending/descending order as per the requirement
+
+Export: We have created the export functionality as csv/excel where users can export the whole report data in a csv or excel file with the required field's data and used them likewise.
+
+ 
+
+Back to Top
+
+
+Resource Management
+
+Client:
+Software support and expertise provider 
+Industry:
+Marketing 
+Technologies: 
+Salesforce, Database.com, Apex,Visualforce 
+This application is basically designed to setup the Order entry process, sales adjustment, assignment of Order entry user, simplified approval process, Payout case process and automate the Order process, referral payout process. With Order entry process they can easily find the MRCs for each individual teams, total commissionable MRCs and payout for referrals. 
+
+Main features listed below:
+1.  Disallow user to save an Opportunity that has pending Sales Requests: Added feature to restrict user to save the opportunity stage to contract signed if some of the sales request is still pending.
+
+2.  One to One relationship from opportunity to case: 
+Added trigger so as to restrict user for to add more case to an Opportunity and show user a custom error message.
+
+3.  Set opportunity Stage based on related Order case: 
+Added trigger to set Opportunity stage to Closed Installed when Order is Install Completed and Closed Lost if Order canceled.
+
+4.  Lock Order stages based on profile:
+Created validation rule to lock Order stages based on profile.
+
+5.  Added functionality to clone opportunity and Account with the related records at click of a button.
+
+6.  Added triggers so as not to allow users to set the Opportunity stage to Closed Won, Closed Lost or Closed Installed IF an Order Case has been created for the opportunity.
+
+7.  Build Simplified Approval Processes:
+Added feature so a as to send email to Managers based on Approval process without locking the record.
+
+8.  Round-Robin Order assignment process:
+Added feature to assign the Order entry rep to any order automatically based on round-robin process with experience level and team selector criteria.
+
+9.  Create PDF document:
+Added a generic Visual Force template to be used by different reports to generate PDF documents based on opportunity contract term field.  The Template renders all the layout information and PDF contents dynamically based on opportunity and Phone line details stored in a custom object 'Email Template'. 10. Added feature to associate new contact to Account when being created from the opportunity.
+
+11. Added feature so as to restrict Notes and Accounts deletion and modification by other than the Admin and owner of Opportunity.
+
+12.  Product Type Mapping – Created trigger to populate the opportunity product type based on their line items mapping stored in custom setting.
+
+13.  Sales adjustment -  Client wanted the amount to be the Commissionable MRC but since we can't edit the Opportunity Amount, we had to add a Product Line Item that will "deduct" from Amount.  Created a trigger to add a sales adjustment product line item in opportunity to adjust the commissionable MRC. 
+
+14.  Mass delete/add – Created custom button and class to give user the opportunity to mass delete/add phone Line details.
+
+15. Commisionable MRC – created workflow, fields, formula, validation to calculate commisionable MRC on order level and calculate the MRC based on different team criteria. 
+
+16.  Partner registration – Automated the partner registration process. Created web to lead form, Trigger, workflow, Validation to automate this process. 17.  Referral payout process -  After partner registration, they can provide lead to organization. Automated the payout process for organization. When the lead provided by partner converts into account,opportunity, then  organization need to pay money to partner.
+
+18. New Order entry process – The global stage should change according to the each team stage. Automated the global stage based on each team stages separately and validated each team stages separately.
