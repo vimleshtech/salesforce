@@ -1,0 +1,196 @@
+Object
+=====================
+id  		1
+name  		raman
+gender		male
+	
+
+table
+============
+id  name  gender
+1   raman  male
+2   nitin  male
+3   jatin   male
+4   nitisha  female
+
+action on object:
+			add new row/insert
+			update / edit
+			delete 
+
+
+create new trigger:
+		add new row/insert : trigger.new 
+			5 abcd male	
+		delete  	   : trigger.old
+			2   nitin  male	
+		update / edit					
+			: trigger.old	
+				2   nitin  male	 
+			: trigger.new 
+				2   nitin sinha  male
+			
+					
+Questions: Write a trigger to maintain the audit log 
+		Object1
+			f1	1		
+			f2	abcd
+			f3	ab1
+				ADD     EDIT  DELETE 
+
+				
+		Object_audit
+			f1 f2 	f3		create_date
+			1   abcd xyz		...
+			1   abcd pwd1		..
+			1   abcd  ab1		
+				
+							
+				
+
+Object 1:
+	before task (change data or apply 
+			some calculation)
+		Example 1:
+
+		for(Object__c c : trigger.New)
+		{
+			if(c.f1__c>100)
+			{
+				c.field__c = c.f1__c*.18;
+			}
+			else if(c.f1__c>500)
+			{
+				c.field__c = c.f1__c*.12;
+			}
+			else
+			{
+				c.field__c = c.f1__c*.05;
+
+			}			
+		}
+		Example 2:  Validation
+		for(Object__c c : trigger.New)
+		{
+			if(c.f1__c<100)
+			{
+				System.debug("sales amount cannot less than 100");
+				return null;
+			}
+
+
+		}	
+
+	
+	After task  (insert row to different/other 
+
+		Example 1:
+
+		List<Object2__c) o = new List<Object2__c>();
+
+		
+		for(Object__c c : trigger.New)
+		{
+			Object2__c a = new Object2__c();
+			a.f1__c = c.f1__c;
+			a.f2__c = c.f2__c;
+			a.f3__c = c.f3__c;		
+
+			o.add(a)
+
+		}	
+		insert o;
+
+		Example 2: Assign to users 
+		List<Users__c> ulist =new List<Users__c>();
+
+		for(Object__c c : trigger.New)
+		{
+			Users__c u =new Users__c();
+
+			u.oid__c = c.f1__c;
+			if(c.f1__c>1000000)
+			{
+				
+				u.user_name__c = 'Nitin Sharma';	
+
+			}
+			else if (c.f1__c>100000)
+			{
+				u.user_name__c = 'Raman';
+			}
+			else 
+			{
+				u.user_name__c = 'achawla122@gmail.com';
+			}					
+
+			ulist.add(u);
+		}
+		
+		insert ulist;
+
+	Email API 
+			
+
+
+Today's Topic
+===============================
+Design Pattern and Best Practice
+		1. Indentify the Object and list of fields 
+		2. Create the Object and fields 
+		3. Add Constraints, Formula if required
+		4. Create Controler based on Objects
+			abd declare all the variables
+		5. Design and Develop the VisualforcePage 
+		6. Write a funcction/method to perform action 
+		7. Application should be modular; (OOPS)
+		
+		class SalesExample
+		{		
+			String fn{get;set};
+			String ln{get;set;}
+
+			void add()
+			{
+
+
+			}
+
+		}	
+			
+Debugging &  System Log
+=============================
+System.log(msg)		: print in console
+System.debug(msg)	: print/show on page 	
+
+SOQL
+================
+object : classroom__c
+=================
+	read all data from object
+	[SELECT Name, seats__c from classroom__c]	
+
+
+
+read data based on condition 
+
+[SELECT Name, of_seats__c, of_available_seats__c 
+FROM ClassRoom_Demo__c where Name :='nitin'];
+
+
+[SELECT Name, of_seats__c, of_available_seats__c 
+FROM ClassRoom_Demo__c 
+where id>100 and sal>32444];
+        
+
+SOSL
+==============
+  
+   (List<Account>) [FIND :'nitin' RETURNING Account(Name, Industry, Rating)];
+     
+
+
+
+
+			
+		
