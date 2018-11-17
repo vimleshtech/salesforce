@@ -1,0 +1,145 @@
+Trigger: is function or set of instructions/command which
+execute automatically when DML(data manipulation language)
+command will run/execute/fire on an object
+===============
+Automatically: trigger cannot be call/execute explicitly 
+		-this will exectue automatically
+DML:
+	->new row / insert row
+	->update / edit row
+	->delete / remove row 
+
+
+There are following types of trigger:
+i. before 		
+		insert/new row
+		update / edit
+		delete / remove
+ii. after 
+		insert
+		update
+		delete 
+
+
+====================================
+Example1:
+Object :
+	oid		: 
+	customer name	:
+	product name	:
+	qty		:
+	price		:
+
+	*	Action from trigger
+	Total Price ?
+	Tax	    ? 
+	
+	* Assign the particular order to sales person 
+	SalesPerson?
+		SP1
+		SP2
+		SP3	
+	
+
+Step1:
+	create an object : Sales_Order
+Step2:
+	add the required/above menstion columns
+Step3:
+	add object to tab 
+	
+Step4: 
+	create before insert trigger 
+
+
+trigger trg_before_up on Sales_Order__c (before insert) {
+
+}
+
+
+	if (country  == 'india')
+	{
+		o.sale.. = 'kshitiz johar'
+	}
+	else if (country  =='us')
+	{
+		gaurav kapoor
+	}
+	else 
+	{
+		nitin sinha
+	}
+	
+		Trigger: is function or set of instructions/command which
+execute automatically when DML(data manipulation language)
+command will run/execute/fire on an object
+===============
+Automatically: trigger cannot be call/execute explicitly 
+		-this will exectue automatically
+DML:
+	->new row / insert row
+	->update / edit row
+	->delete / remove row 
+
+
+There are following types of trigger:
+i. before 		
+		insert/new row
+		update / edit
+		delete / remove
+ii. after 
+		insert
+		update
+		delete 
+
+
+====================================
+Example1:
+Object :
+	oid		: 
+	customer name	:
+	product name	:
+	qty		:
+	price		:
+
+	*	Action from trigger
+	Total Price ?
+	Tax	    ? 
+	
+	* Assign the particular order to sales person 
+	SalesPerson?
+		SP1
+		SP2
+		SP3	
+	
+
+Step1:
+	create an object : Sales_Order
+Step2:
+	add the required/above menstion columns
+Step3:
+	add object to tab 
+	
+Step4: 
+	create before insert trigger 
+
+
+trigger trg_before_up on Sales_Order__c (before insert) {
+
+}
+
+
+	if (country  == 'india')
+	{
+		o.sale.. = 'kshitiz johar'
+	}
+	else if (country  =='us')
+	{
+		gaurav kapoor
+	}
+	else 
+	{
+		nitin sinha
+	}
+	
+		
