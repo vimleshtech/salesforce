@@ -1,0 +1,60 @@
+Salesforce OVerview
+=======================
+-> Salesfoce is cloud(every resouce on internet) based CRM(customer relationship management) plateform 
+
+	https://www.login.salesfoce.com
+
+
+
+Salesfoce Services:
+==================
+-Admin
+GO to Setup  (right top corner)
+got to create (left page, buttom)
+
+
+	->Create 
+
+	
+	-Apps 	(Application)
+		Exaple:
+			School App	
+	-Objects		: 
+			ClassRoom
+			Subjects
+			Student
+		
+			Fee
+			Teacher
+			etc.
+
+	-Fields/Columns
+		ClassRoom
+			roomid
+			roomname
+			capacity 
+			etc.
+
+		Subjects:
+			subjectid
+			name
+			duration 
+			
+		Student
+			Studentid
+			Gender
+			Country
+			Address
+			Email
+			PhoneNo
+			Fee 
+		
+						
+
+	-DataType 	
+			number 
+			text
+			date
+
+	-Convert Object as tab / web page 
+
